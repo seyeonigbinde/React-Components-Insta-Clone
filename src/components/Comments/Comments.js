@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import Comment from './Comment';
 import './Comments.css';
 
@@ -9,9 +9,9 @@ const Comments = props => {
   return (
     <div>
       { 
-      // comments.map((newComment) => {
-      //     return <Comment key={newComment.id} newComment={newComment} />
-      //   })
+      comments.map((newComment) => {
+          return <Comment comment={newComment} key={newComment.id} />
+        })
       
       /* map through the comments prop and render a Comment for every piece of data */}
     </div>
